@@ -1,0 +1,26 @@
+#loader-container{
+    width:100px;
+    height:100px;
+    position:absolute;  
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow:hidden ;
+}
+
+ .loading-div{
+    width: calc(100% );
+    height: calc(100%);
+    border: 10px solid #162534;
+    border-top:8px solid #89f;
+    border-radius:50px;
+    animation:rotate 4s linear infinite ;
+
+}
+
+
+@keyframes rotate {
+    100%{
+        transform:rotate(360deg);
+    }
+}
