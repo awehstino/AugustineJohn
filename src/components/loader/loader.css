@@ -11,7 +11,7 @@
  .loading-div{
     width: calc(100% );
     height: calc(100%);
-    border: 10px solid #162534;
+    border: 9px solid #162534;
     border-top:8px solid #89f;
     border-radius:50px;
     animation:rotate 4s linear infinite ;

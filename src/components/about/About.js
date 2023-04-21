@@ -20,7 +20,7 @@ const About = () => {
             <article className="about_card">
               <FaAward className="about_icon"/>
                <h5>Experience</h5>
-               <small>+1 Years Working</small>
+               <small>can i get experience from your organization?</small>
             </article>
             <article className="about_card">
               <FiUsers className="about_icon"/>
@@ -33,11 +33,12 @@ const About = () => {
                <small>1+ Completed</small>
             </article>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. Veritatis, ex. Optio omnis, 
-             voluptatibus deserunt eveniet reiciendis
-              quo earum sint doloribus sunt, vero eum 
-             ea ullam voluptates voluptate veniam molestiae.
+          <p>My name`s are Augustine,Aweh,JayJay and i
+             was born and raised in plateau(jos) state 
+             Nigeria basing in Lagos state. I`m not well
+             educated but i love researching on things that 
+             i don`t know and also taking correction and learn from others.
+             I like watching anime,cartoon and also playing game on a free time.
           </p>
           
          <a href="#contact" className="btn btn-primary">Let`s Talk</a>

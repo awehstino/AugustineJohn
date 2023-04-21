@@ -19,7 +19,7 @@ function App() {
   },[])
   return (
     <>
-    {
+   {
         loading ? <Loader/> :
           <>  
            <Header />
@@ -33,7 +33,7 @@ function App() {
            <Footer/>          
           </>
       }
-    <div/>
+    
     </>
   )
  

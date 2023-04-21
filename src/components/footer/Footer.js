@@ -4,7 +4,7 @@ import {FiInstagram} from "react-icons/fi"
 import {IoLogoTwitter} from "react-icons/io"
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <a href="#" className="footer_logo">Blackfugee</a>
       <ul className="permalinks">
         <li><a href="#">Home</a></li>

@@ -9,6 +9,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const Testimonials = () => {
+  let review = [{
+  name : "lucho",
+  img : lucho,
+  paragraph :"augustine is an amazing front-end react developer"
+   }]
   return (
     <section >
       <h5>Review from partners</h5>
@@ -18,40 +23,18 @@ const Testimonials = () => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}>
+        {review.map(({name,img,paragraph},index)=>{
+          return (
+            <SwiperSlide className="testimonial" key={index}>
+          <div className="partner_avatar">
+            <img src={img} alt="" />
+          </div>
+          <h5 className="partner_name">{name}</h5>
+            <small className="partner_review">{paragraph}</small>
+        </SwiperSlide>
+          )
+        })}
 
-        <SwiperSlide className="testimonial">
-          <div className="partner_avatar">
-            <img src={lucho} alt="" />
-          </div>
-          <h5 className="partner_name">Luciano Lupo</h5>
-            <small className="partner_review">Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Minima amet dolore impedit?
-             Libero, quaerat! Similique vitae hic, dicta sit quos dolorum, 
-             in aut, error veniam minus repudiandae
-             perferendis quo laudantium!</small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="partner_avatar">
-            <img src={lucho} alt="" />
-          </div>
-          <h5 className="partner_name">Luciano Lupo</h5>
-            <small className="partner_review">Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Minima amet dolore impedit?
-             Libero, quaerat! Similique vitae hic, dicta sit quos dolorum, 
-             in aut, error veniam minus repudiandae
-             perferendis quo laudantium!</small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="partner_avatar">
-            <img src={lucho} alt="" />
-          </div>
-          <h5 className="partner_name">Luciano Lupo</h5>
-            <small className="partner_review">Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Minima amet dolore impedit?
-             Libero, quaerat! Similique vitae hic, dicta sit quos dolorum, 
-             in aut, error veniam minus repudiandae
-             perferendis quo laudantium!</small>
-        </SwiperSlide>
       </Swiper>
     </section>
   )
