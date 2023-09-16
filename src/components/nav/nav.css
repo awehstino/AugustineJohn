@@ -12,7 +12,20 @@ nav{
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    transition: var(--transition);
+    animation: slide-up 2s ease .8s;
+    animation-fill-mode: forwards;
 
+}
+@keyframes slide-up {
+    0%{
+        
+        bottom: -10rem ;
+    }
+    100%{
+       
+        bottom: 2rem ;
+    }
 }
 
 nav a {

@@ -2,24 +2,29 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    margin-top: 6rem
 }
 .about_me{
     width: 100%;
-    
+    height: 94%;
     border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
-    place-items: center;
-
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent); 
+    justify-items: center;
+    align-items: center;
 }
 .about_me-image{
+   
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    align-items: center;
 }
+
+
 .about_me-image:hover{
     transform: rotate(0deg);
+    
    
 }
 .about_cards{
@@ -74,11 +79,12 @@
     }
     .about_me{
         width: 50%;
+        height: auto;
         margin: 2rem auto 4rem;
     }
     .about_content p{
         margin: 1rem 0 1.5rem;
-
+        height: auto;
     }
   }
   

@@ -3,6 +3,36 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+.experience_frontend{
+    position: relative;
+    animation: slide-left 2s ease .8s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-left {
+    0%{
+        
+        left: -50rem ;
+    }
+    100%{
+       
+        left: 0rem ;
+    }
+}
+.experience_backend{
+    position: relative;
+    animation: slide-right 2s ease .8s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-right {
+    0%{
+        
+        right: -50rem ;
+    }
+    100%{
+       
+        right: 0rem ;
+    }
+}
 
 .experience_container > div {
     background: var(--color-bg-variant);
@@ -65,7 +95,7 @@
 
      }
      .experience_container > div {
-     width: 100%;
-     padding: 2rem 1rem;
+        width: 100%;
+     
      }
     }

@@ -1,12 +1,25 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+    padding: 7rem 0;
+   
+   
+    
 }
 .header_container{
     height: 100%;
     text-align: center;
-    position: relative;
+    margin-bottom: 3rem;
+}
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+  position: relative;
+  align-items: center;
+  margin-bottom: 9rem;
+  justify-content: space-between;
+  
 }
 .cta{
     margin-top: 2.5rem;
@@ -20,10 +33,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+   
 }
 .headersocials::after{
     content: "";
@@ -34,23 +44,55 @@ header{
 .me{
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 3rem 12rem 0 0;
-    overflow: hidden;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-
+    height: 22rem;
+    padding: 0.7rem;
+    animation: animate 5s ease-in-out infinite;
+    
+    transition: all 1s ease-in-out;
+}
+@keyframes animate {
+   0%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   
+   }
+    
+   
+   50%{
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+   
+   }
+   
+   100%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   
+   }
+  
 }
 .ME{
-    border-radius: 12rem 3rem 0 0; 
+    width: 100%;
+    height: 100%;
+    animation: animate2 7s ease-in-out infinite;
     box-shadow: 0 5px 10px var(--color-bg);
+    
+}
+@keyframes animate2 {
+  0%{
+    border-radius: 80% 40% 30% 60% / 60% 40% 70% 30%;
+   
+   }
+    
+   
+   50%{
+    border-radius: 40% 70% 60% 30% / 70% 30% 50% 40%;
+   
+   }
+   
+   100%{
+    border-radius: 80% 40% 30% 60% / 60% 40% 70% 30%;
+   
+   }
 }
 .scroll_down{
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
@@ -60,7 +102,7 @@ header{
 @media screen  and (max-width:1024px) {
   header{
     
-    height: 68vh;
+    height: 74vh;
   }
   
 }
@@ -69,9 +111,13 @@ header{
 @media screen  and (max-width:600px) {
   header{
     height: 100vh;
+    margin-bottom: 5rem;
   }
   .headersocials, .scroll_down{
     display: none;
+  }
+  me{
+    margin: auto;
   }
   
 }
