@@ -1,5 +1,6 @@
 import "./testimonials.css"
 import lucho from "../../assets/lucho.jpg"
+import faith from "../../assets/IMG-20230916-WA0096.jpg"
 
 
 import { Pagination } from 'swiper';
@@ -9,11 +10,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const Testimonials = () => {
-  let review = [{
+  let reviews = [{
   name : "lucho",
   img : lucho,
-  paragraph :"augustine is an amazing front-end react developer"
-   }]
+  paragraph :"agustine john es un increíble desarrollador front-end."
+   },
+   {
+    name : "Faith akpan",
+    img : faith,
+    paragraph :"Augustine john he is an awesome front-end  developer."
+     }
+  ]
   return (
     <section >
       <h5 data-aos="zoom-in">Review from partners</h5>
@@ -23,7 +30,7 @@ const Testimonials = () => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}>
-        {review.map(({name,img,paragraph},index)=>{
+        {reviews.map(({name,img,paragraph},index)=>{
           return (
             <SwiperSlide className="testimonial" key={index}>
           <div className="partner_avatar">
