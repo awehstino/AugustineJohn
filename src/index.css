@@ -44,9 +44,13 @@ body {
 
 .container{
   width: var(--container-width-lg);
-  margin:  0 auto;
-  padding:3rem 0 ;
+  margin: auto;
+ 
 }
+section{
+  margin: 8rem auto 0;
+}
+
 h1, h2,h3,h4,h5{
   font-weight: 500;
 }
@@ -105,9 +109,11 @@ a:hover{
 @media screen  and (max-width:1024px) {
   .container{
     width: var(--container-width-md);
+   
   }
   section{
-    margin-top: 6rem;
+    margin: 6rem 0;
+    
   }
 }
 
@@ -115,9 +121,14 @@ a:hover{
 @media screen  and (max-width:600px) {
   .container{
     width: var(--container-width-sm);
+    
+  }
+  section{
+    margin: 2rem 0;
   }
   section > h2{
     margin-bottom:2rem ;
+
   }
 }
 

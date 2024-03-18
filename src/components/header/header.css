@@ -1,26 +1,17 @@
 header{
     height: 100vh;
-    display: block;
-    overflow: hidden;
-    padding: 3rem 0;
+    padding-top: 5rem;
+   
    
 }
 .header_container{
-    position: relative;
+    height: 100%;
     text-align: center;
-    background-color: rgba(0, 128, 0, 0);
+    position: relative;
 }
-.wrapper{
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
- 
-  
-}
+
 .cta{
-    margin:  2.5rem 0;
+    margin-top:  2.5rem ;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -31,6 +22,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
    
 }
 .headersocials::after{
@@ -43,7 +38,9 @@ header{
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 22rem;
-    padding: 0.7rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
@@ -66,7 +63,6 @@ header{
   
 }
 .ME{
-    width: 100%;
     height: 100%;
     animation: animate2 7s ease-in-out infinite;
     box-shadow: 0 5px 10px var(--color-bg);
@@ -90,6 +86,9 @@ header{
    }
 }
 .scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
@@ -98,8 +97,8 @@ header{
 /*================== MEDIA QUERIES (MEDIUM DEVICES) ================*/
 @media screen  and (max-width:1024px) {
   header{
-    height: 74vh;
-    
+    height: 68vh;
+    overflow: visible;
   }
   
 
@@ -109,17 +108,17 @@ header{
 /*================== MEDIA QUERIES (SMALLER DEVICES) ================*/
 @media screen  and (max-width:600px) {
   header{
-    height: 100vh;
+    height: 85vh;
+    padding-top: 4rem;
+  }
+  .container{
+    width: var(--container-width-sm);
+    padding: 0;
     
   }
   .headersocials, .scroll_down{
     display: none;
   }
-  me{
-    margin: auto;
-  }
-  .wrapper{
-    align-items: center;
-    justify-content: space-around;
-  }
+  
+ 
 }

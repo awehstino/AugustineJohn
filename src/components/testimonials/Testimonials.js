@@ -23,9 +23,9 @@ const Testimonials = () => {
   ]
   return (
     <section >
-      <h5 data-aos="zoom-in">Review from partners</h5>
-      <h2 data-aos="fade-up">Testimonials</h2>
-      <Swiper data-aos="zoom-in" className="container testimony_container"   modules={[ Pagination]}
+      <h5 >Review from partners</h5>
+      <h2 >Testimonials</h2>
+      <Swiper  className="container testimony_container"   modules={[ Pagination]}
       spaceBetween={40}
       slidesPerView={1}
       navigation

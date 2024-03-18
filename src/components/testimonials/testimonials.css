@@ -3,6 +3,9 @@
  padding-bottom: 4rem;
 
 }
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: var(--color-primary-variant);
+}
 .partner_avatar{
     width: 4rem;
     aspect-ratio: 1/1;

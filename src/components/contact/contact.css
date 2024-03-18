@@ -1,9 +1,10 @@
-.container.container_contact{
+.contact_container{
   width: 58%;
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
-}.contact_options{
+}
+.contact_options{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -38,8 +39,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    margin-top: 4rem;
-
+    
 }
 input, textarea{
     width: 100%;
@@ -53,7 +53,7 @@ input, textarea{
 
 /*================== MEDIA QUERIES (MEDIUM DEVICES) ================*/
 @media screen  and (max-width:1024px) {
-    .container.container_contact{
+     .contact_container{
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -63,7 +63,7 @@ input, textarea{
   /*================== MEDIA QUERIES (SMALLER DEVICES) ================*/
   @media screen  and (max-width:600px) {
     
-    .container.container_contact{
+    .container .contact_container{
         width: var(--container-width-sm);
     }
     

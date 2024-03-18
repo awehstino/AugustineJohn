@@ -2,10 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin: auto;
 }
-
-
 
 .experience_container > div {
     background: var(--color-bg-variant);
@@ -53,6 +50,7 @@
     }
     .experience_container > div {
         width: 80%;
+        padding: 2rem;
         margin: 0 auto;
     }
     .experience_content{
@@ -68,6 +66,6 @@
      }
      .experience_container > div {
         width: 100%;
-     
+        padding: 2rem 1rem;
      }
     }

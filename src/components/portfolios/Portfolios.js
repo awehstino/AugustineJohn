@@ -8,7 +8,7 @@ const Portfolios = () => {
       <h5>My Works </h5>
       <h2>Portfolio</h2>
       <div  className="container portfolio_container">
-        <article data-aos="zoom-in" className='portfolio_item'>
+        <article  className='portfolio_item'>
             <div className="portfolio_item-image">
               <img src={Folio} alt="" />
             </div>
@@ -18,7 +18,7 @@ const Portfolios = () => {
             <a href="" className='btn btn-primary'onClick={()=> alert("Sorry No live Demo on this project yet click on the sourceCode to see the source files")}>Live Demo</a>
             </div>
         </article>
-        <article data-aos="zoom-in" className='portfolio_item'>
+        <article  className='portfolio_item'>
             <div className="portfolio_item-image">
               <img src={food_univers} alt="" />
             </div>

@@ -9,20 +9,22 @@ import Footer from "./components/footer/Footer.js"
 import Portfolios from "./components/portfolios/Portfolios.js"
 import Loader from "./components/loader/Loader.jsx"
 import { useEffect, useState } from "react"
+import aos from "aos"
+import "aos/dist/aos.css"
 
 function App() {
   const [loading, setloading] = useState(true)
   useEffect(()=>{
-   
-   fetch(" https://awehstino.github.io/my_portfolio/").then(response =>{
-      console.log(response)
+   aos.init()
+  // fetch(" https://awehstino.github.io/my_portfolio/").then(response =>{
+    //  console.log(response)
        setloading(false)
     }) 
-  },[])
+ // },[])
   return (
     <>
    {
-       loading ? <Loader/> :
+     //  loading ? <Loader/> :
           <>  
            <Header />
            <Nav/>

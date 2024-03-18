@@ -27,7 +27,7 @@
 .service_head h3{
     text-align: center;
     color: var(--color-bg);
-
+    font-size: 1rem;
 }
 .service_list{
    padding: 2rem;
@@ -61,5 +61,6 @@
   @media screen  and (max-width:600px) {
      .services_container{
         grid-template-columns: 1fr;
+        gap: 1.5rem;
      }
     }
